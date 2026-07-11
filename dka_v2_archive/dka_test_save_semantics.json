@@ -1,0 +1,60 @@
+{
+  "concept_index": {
+    "call": [
+      "37f75f74-180",
+      "381d128f-1ff",
+      "d9ff60d0-51e"
+    ],
+    "output": [
+      "37f75f74-180",
+      "d9ff60d0-51e"
+    ],
+    "logging": [
+      "37f75f74-180",
+      "d9ff60d0-51e"
+    ],
+    "invocation": [
+      "37f75f74-180",
+      "381d128f-1ff",
+      "d9ff60d0-51e"
+    ],
+    "declaration": [
+      "37f75f74-180"
+    ],
+    "hello": [
+      "37f75f74-180"
+    ],
+    "function_definition": [
+      "37f75f74-180"
+    ]
+  },
+  "pattern_semantics": {
+    "d9ff60d0-51e": [
+      "call",
+      "output",
+      "logging",
+      "invocation"
+    ],
+    "381d128f-1ff": [
+      "call",
+      "invocation"
+    ],
+    "37f75f74-180": [
+      "logging",
+      "invocation",
+      "call",
+      "output",
+      "declaration",
+      "hello",
+      "function_definition"
+    ]
+  },
+  "concept_usage": {
+    "hello": 3
+  },
+  "search_history": {
+    "hello": {
+      "37f75f74-180": 9
+    }
+  }
+}

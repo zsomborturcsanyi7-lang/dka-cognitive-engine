@@ -1,0 +1,134 @@
+
+===init===
+engine.set_var("px", engine.width // 2)
+engine.set_var("py", engine.height - 80)
+engine.set_var("bullets", [])
+engine.set_var("enemies", [])
+engine.set_var("score", 0)
+engine.set_var("lives", 3)
+engine.set_var("combo", 0)
+engine.set_var("cd", 0)
+engine.timer.set("spawn", 1.0)
+engine.timer.set("star_update", 0.05)
+
+===update===
+import pygame, random, math
+px = engine.get_var("px")
+py = engine.get_var("py")
+bullets = engine.get_var("bullets", [])
+enemies = engine.get_var("enemies", [])
+cd = engine.get_var("cd", 0)
+
+spd = 6
+if engine.input.key_pressed(pygame.K_LEFT): px = px - spd
+if engine.input.key_pressed(pygame.K_RIGHT): px = px + spd
+if engine.input.key_pressed(pygame.K_UP): py = py - spd
+if engine.input.key_pressed(pygame.K_DOWN): py = py + spd
+if px < 20: px = 20
+if px > engine.width - 20: px = engine.width - 20
+if py < 20: py = 20
+if py > engine.height - 20: py = engine.height - 20
+
+if engine.input.key_pressed(pygame.K_SPACE) and cd <= 0:
+    bullets.append({"x": px, "y": py})
+    cd = 10
+
+for b in bullets[:]:
+    b["y"] = b["y"] - 10
+    if b["y"] < -10:
+        bullets.remove(b)
+
+if engine.timer.ready("spawn"):
+    ex = random.randint(30, engine.width - 30)
+    etype = random.choice(["basic", "fast"])
+    hp = 1 if etype == "basic" else 1
+    spd_e = 2 if etype == "basic" else 4
+    enemies.append({"x": ex, "y": -20, "hp": hp, "spe": spd_e})
+
+for e in enemies[:]:
+    e["y"] = e["y"] + e.get("spe", 2)
+    if e["y"] > engine.height + 20:
+        enemies.remove(e)
+        engine.set_var("lives", engine.get_var("lives", 3) - 1)
+        engine.camera.shake(5)
+
+for b in bullets[:]:
+    for e in enemies[:]:
+        dx = b["x"] - e["x"]
+        dy = b["y"] - e["y"]
+        if dx * dx + dy * dy < 400:
+            e["hp"] = e["hp"] - 1
+            if b in bullets: bullets.remove(b)
+            engine.particles.emit(e["x"], e["y"], 8, "spark", color=(255, 200, 50))
+            if e["hp"] <= 0:
+                engine.inc_var("score", 10 * (1 + engine.get_var("combo", 0)))
+                engine.inc_var("combo", 1)
+                engine.particles.emit(e["x"], e["y"], 20, "explosion")
+                engine.filter.flash((255, 255, 255))
+                engine.camera.shake(3)
+                if e in enemies: enemies.remove(e)
+            break
+
+if cd > 0: cd = cd - 1
+
+engine.set_var("px", px)
+engine.set_var("py", py)
+engine.set_var("bullets", bullets)
+engine.set_var("enemies", enemies)
+engine.set_var("cd", cd)
+engine.particles.update(engine.dt)
+
+===draw===
+import pygame, random
+px = engine.get_var("px")
+py = engine.get_var("py")
+bullets = engine.get_var("bullets", [])
+enemies = engine.get_var("enemies", [])
+
+engine.screen.fill((0, 0, 10))
+for _ in range(30):
+    sx = random.randint(0, engine.width)
+    sy = random.randint(0, engine.height)
+    engine.screen.set_at((sx, sy), (40, 40, 60))
+
+pygame.draw.polygon(engine.screen, (0, 200, 255), [(px, py - 25), (px - 18, py + 10), (px + 18, py + 10)])
+
+for b in bullets:
+    pygame.draw.rect(engine.screen, (255, 255, 100), (b["x"] - 2, b["y"] - 6, 4, 12))
+
+for e in enemies:
+    color = (255, 80, 80) if e.get("type") == "basic" else (255, 200, 50)
+    pygame.draw.circle(engine.screen, color, (int(e["x"]), int(e["y"])), 14)
+    pygame.draw.circle(engine.screen, (255, 255, 255), (int(e["x"]), int(e["y"])), 10, 1)
+
+engine.particles.render(engine.screen)
+engine.ui.draw_label(engine.screen, "Score: " + str(engine.get_var("score", 0)), (10, 10), (255, 255, 255))
+engine.ui.draw_label(engine.screen, "Lives: " + str(engine.get_var("lives", 3)), (10, 36), (255, 100, 100))
+c = engine.get_var("combo", 0)
+if c > 1:
+    engine.ui.draw_label(engine.screen, "Combo x" + str(c) + "!", (engine.width // 2, 20), (255, 215, 0), engine.ui.font_large, center=True)
+
+===collision===
+for e in engine.get_var("enemies", []):
+    px = engine.get_var("px", 400)
+    py = engine.get_var("py", 500)
+    dx = e["x"] - px
+    dy = e["y"] - py
+    if dx * dx + dy * dy < 900:
+        engine.set_var("lives", engine.get_var("lives", 3) - 1)
+        engine.particles.emit(px, py, 30, "explosion", color=(255, 0, 0))
+        engine.camera.shake(12)
+        if engine.get_var("lives", 3) <= 0:
+            return True
+return False
+
+===menu_draw===
+import pygame, random
+engine.screen.fill((0, 0, 10))
+for _ in range(50):
+    engine.screen.set_at((random.randint(0, engine.width), random.randint(0, engine.height)), (50, 50, 80))
+engine.ui.draw_label(engine.screen, "SHOOT'EM UP", (engine.width // 2, engine.height // 3), (255, 100, 50), engine.ui.font_large, center=True)
+engine.ui.draw_label(engine.screen, "Nyilak: mozgas | SPACE: loves", (engine.width // 2, engine.height // 2 - 20), (200, 200, 200), engine.ui.font_small, center=True)
+btn = pygame.Rect(engine.width // 2 - 80, engine.height // 2 + 30, 160, 45)
+if engine.ui.button(engine.screen, "INDITAS", btn, color=(200, 100, 50)):
+    engine.switch_state(engine.STATE_PLAYING)

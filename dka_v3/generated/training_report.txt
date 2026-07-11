@@ -1,0 +1,51 @@
+DKA V3 — Training Report
+============================================================
+Futási idő: 54.9s
+Összes feladat: 315
+Sikeres: 241
+Sikertelen: 74
+Sikerességi arány: 76.5%
+Max kimenet: 10332 chars
+Átlag kimenet: 1899 chars
+
+Tudásbázis: 406 fogalom, 448 kapcsolat
+
+Template-ek:
+  python: 476
+  html: 440
+  javascript: 432
+  css: 422
+
+Parser pattern-ek: 512
+Önfejlesztő javítások: 241
+Önfejlesztő felfedezések: 15586
+Nyelvi értelmező inferálások: 51
+
+Felfedezések (utolsó 20):
+  [ÁLTALÁNOSÍTÁS] ['button', 'btn', 'submit', 'küldés', 'kattints'] mind same_as gomb, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['image', 'img', 'picture', 'photo', 'foto', 'ábra', 'abra', 'grafika', 'illusztráció'] mind same_as kép, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['tablazat', 'adattábla', 'matrix'] mind same_as táblázat, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['menu', 'nav', 'navigacio', 'navigáció'] mind same_as menü, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['href', 'url', 'hypertext', 'hyperlink', 'hivatkozás', 'hivatkozas'] mind same_as link, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['css', 'design', 'formatum', 'skin', 'téma', 'tema'] mind same_as stílus, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['footer', 'lablec', 'copyright'] mind same_as lábléc, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['összeg', 'total', 'osszeg', 'osszegzes', 'add', 'összegez', 'osszegez'] mind same_as összegzés, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['filter', 'szures', 'filterez', 'szure', 'válogatás', 'valogatas', 'keres', 'keresd', 'talál', 'talal', 'szűrj', 'szurj', 'szurd'] mind same_as szűrés, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['rend', 'rendezes', 'sort', 'order', 'sorrend', 'rendez', 'rendezd', 'rendezi', 'sorba'] mind same_as rendezés, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['map', 'atalkitas', 'konvert', 'convert'] mind same_as transzformáció, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['list', 'array', 'collection', 'tomb', 'vektor', 'sorozat'] mind same_as gyűjtemény, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['dict', 'szotar', 'object', 'hash', 'asszociativ'] mind same_as szótár, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['str', 'string', 'text', 'karakter', 'char'] mind same_as szöveg, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['for', 'while', 'loop', 'iteracio', 'ismetles', 'each', 'forEach'] mind same_as ciklus, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['if', 'condition', 'ha', 'feltetel', 'case', 'switch', 'elágazás', 'elagazas'] mind same_as feltétel, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['function', 'fuggveny', 'method', 'metodus', 'eljárás', 'eljaras', 'subroutine'] mind same_as függvény, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['value', 'ertek', 'val', 'variable', 'valtozo', 'változó'] mind same_as érték, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['number', 'szam', 'num', 'integer', 'float', 'double', 'int'] mind same_as szám, de nincs közös ősük
+  [ÁLTALÁNOSÍTÁS] ['card', 'kartyaval'] mind same_as kártya, de nincs közös ősük
+
+Top 5 legnagyobb kimenet:
+   10332 chars |     html | keszits egy weblapot harom kartyaval (alap, premium, enterpr
+   10323 chars |     html | keszits egy weblapot harom termekkel (ingyenes, medium, pro)
+    9856 chars |     html | keszits egy utazasi weblapot harom celpont kartyaval (parizs
+    9288 chars |     html | keszits egy weblapot harom munkatars kartyaval (Zoli, Peti, 
+    9233 chars |     html | keszits egy teljes saas weblapot heroval jellemzokkel ar kar

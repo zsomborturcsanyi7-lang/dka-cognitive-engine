@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKA V3 - Determinisztikus Kognitív Architektúra</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f5f5; }
+        header { background: #2c3e50; color: white; padding: 40px 20px; border-radius: 8px; margin-bottom: 30px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        main { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        footer { margin-top: 30px; padding: 20px; text-align: center; color: #666; font-size: 0.9em; border-top: 1px solid #ddd; }
+        h1 { color: #2c3e50; margin-bottom: 20px; }
+        h2 { color: #34495e; margin: 25px 0 15px; }
+        p { margin-bottom: 15px; }
+        form { background: #f8f9fa; padding: 25px; border-radius: 8px; margin: 20px 0; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #555; }
+        input, textarea, select { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 1em; }
+        button { background: #3498db; color: white; padding: 12px 25px; border: none; border-radius: 4px; font-size: 1em; cursor: pointer; }
+        button:hover { background: #2980b9; }
+        img { max-width: 100%; height: auto; border-radius: 4px; margin: 20px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #2c3e50; color: white; }
+        tr:hover { background: #f5f5f5; }
+        nav ul { list-style: none; padding: 0; display: flex; gap: 20px; justify-content: center; background: #34495e; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
+        nav a { color: white; text-decoration: none; font-size: 1.1em; }
+        nav a:hover { text-decoration: underline; }
+        .card { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #3498db; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DKA V3 Weboldal</h1>
+        <p>Ezt az oldalt a Determinisztikus Kognitív Architektúra V3 generálta</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Főoldal</a></li>
+            <li><a href="#">Rólunk</a></li>
+            <li><a href="#">Szolgáltatások</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post">
+    <h2>Kapcsolatfelvétel</h2>
+    <p>Kérjük, töltse ki az alábbi űrlapot:</p>
+    {children}
+    <button type="submit">Küldés</button>
+</form>
+<h1>Fejléc vagy cím a weboldalon. Általában a legfonto</h1>
+<figure>
+    <img src="https://via.placeholder.com/600x400?text=DKA+V3" alt="DKA V3 által generált kép" style="width:100%;max-width:600px;">
+    <figcaption style="text-align:center;color:#666;margin-top:8px;">DKA V3 - Generált tartalom</figcaption>
+</figure>
+<header style="background:#2c3e50;color:white;padding:20px;border-radius:8px;margin-bottom:20px;">
+    <h2 style="color:white;">Weboldal tetején lévő rész. Általában címet és nav</h2>
+    {children}
+</header>
+    </main>
+    <footer>
+        <p>&copy; 2026 DKA V3 Generált Weboldal. Minden jog fenntartva.</p>
+        <p>Készült a Determinisztikus Kognitív Architektúra V3 segítségével.</p>
+    </footer>
+</body>
+</html>

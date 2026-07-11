@@ -1,0 +1,143 @@
+
+===init===
+engine.set_var("player_x", 50)
+engine.set_var("player_y", 400)
+engine.set_var("player_vx", 0)
+engine.set_var("player_vy", 0)
+engine.set_var("on_ground", False)
+engine.set_var("score", 0)
+engine.set_var("coins", 0)
+engine.set_var("lives", 3)
+
+# Egyszerű tilemap (40x15, 1 = fal, 0 = levegő)
+grid = []
+for r in range(15):
+    row = [0] * 40
+    if r == 14:
+        row = [1] * 40
+    elif r >= 12:
+        row[0] = 1
+        row[38] = 1
+        row[39] = 1
+    elif r in (4, 8, 10):
+        row[0] = 1
+        row[38] = 1
+        row[39] = 1
+    elif r == 6:
+        row[0] = 1
+        row[38] = 1
+        row[39] = 1
+    grid.append(row)
+
+engine.load_tilemap({"width": 40, "height": 15, "tilesize": 32, "solids": [1],
+    "layers": [{"name": "terrain", "data": grid}]})
+engine.set_var("coin_positions", [(200, 350), (500, 350), (700, 280)])
+engine.timer.set("coin_sparkle", 2.0)
+
+===update===
+import pygame
+px = engine.get_var("player_x", 50)
+py = engine.get_var("player_y", 400)
+pvx = engine.get_var("player_vx", 0)
+pvy = engine.get_var("player_vy", 0)
+ground = engine.get_var("on_ground", False)
+gravity = 0.6
+spd = 5
+
+if engine.input.key_pressed(pygame.K_LEFT):
+    pvx = -spd
+elif engine.input.key_pressed(pygame.K_RIGHT):
+    pvx = spd
+else:
+    pvx = pvx * 0.8
+
+if engine.input.key_just_pressed(pygame.K_SPACE) and ground:
+    pvy = -12
+    ground = False
+
+pvy = pvy + gravity
+if pvy > 15:
+    pvy = 15
+
+px = px + pvx
+py = py + pvy
+
+# Tilemap ütközés (egyszerűsítve)
+player_rect = pygame.Rect(px, py, 28, 32)
+hits = engine.tilemap.collides(player_rect)
+ground = False
+for tile_type, col, row in hits:
+    tile_x = col * 32
+    tile_y = row * 32
+    if pvy > 0 and py < tile_y and py + 32 < tile_y + 20:
+        py = tile_y - 32
+        pvy = 0
+        ground = True
+    elif pvy < 0 and py > tile_y + 20:
+        py = tile_y + 32
+        pvy = 0
+
+if px < 0: px = 0
+if px > 1240: px = 1240
+
+if py > 500:
+    engine.set_var("lives", engine.get_var("lives", 3) - 1)
+    px, py = 50, 400
+    pvy = 0
+    engine.camera.shake(8)
+    engine.filter.flash((255, 0, 0))
+
+# Coin gyűjtés
+coins = engine.get_var("coin_positions", [])
+new_coins = []
+for cx, cy in coins:
+    if abs(px - cx) < 24 and abs(py - cy) < 24:
+        engine.inc_var("coins", 1)
+        engine.inc_var("score", 10)
+        engine.particles.emit(cx, cy, 15, "spark", color=(255, 215, 0))
+    else:
+        new_coins.append((cx, cy))
+engine.set_var("coin_positions", new_coins)
+
+# Kamera
+engine.camera.follow(px + 14, py + 16)
+engine.camera.update()
+
+engine.set_var("player_x", px)
+engine.set_var("player_y", py)
+engine.set_var("player_vx", pvx)
+engine.set_var("player_vy", pvy)
+engine.set_var("on_ground", ground)
+
+===draw===
+import pygame
+px = engine.get_var("player_x", 50)
+py = engine.get_var("player_y", 400)
+engine.tilemap.render(engine.screen, engine.camera)
+
+sx = px - engine.camera.x
+sy = py - engine.camera.y
+pygame.draw.rect(engine.screen, (50, 100, 255), (sx, sy, 28, 32))
+pygame.draw.rect(engine.screen, (100, 150, 255), (sx + 4, sy - 8, 20, 8))
+
+for cx, cy in engine.get_var("coin_positions", []):
+    sx2 = cx - engine.camera.x
+    sy2 = cy - engine.camera.y
+    pygame.draw.circle(engine.screen, (255, 215, 0), (int(sx2), int(sy2)), 8)
+
+engine.ui.draw_label(engine.screen, "Coins: " + str(engine.get_var("coins", 0)), (10, 10), (255, 215, 0), engine.ui.font_small)
+engine.ui.draw_label(engine.screen, "Score: " + str(engine.get_var("score", 0)), (10, 30), (255, 255, 255), engine.ui.font_small)
+engine.ui.draw_label(engine.screen, "Lives: " + str(engine.get_var("lives", 3)), (10, 50), (255, 100, 100), engine.ui.font_small)
+
+engine.particles.render(engine.screen, engine.camera)
+
+===collision===
+return engine.get_var("lives", 3) <= 0
+
+===menu_draw===
+import pygame
+engine.ui.draw_label(engine.screen, "PLATFORMER", (engine.width // 2, engine.height // 3), (50, 150, 255), engine.ui.font_large, center=True)
+engine.ui.draw_label(engine.screen, "Nyilak: mozgas | SPACE: ugras", (engine.width // 2, engine.height // 2 - 20), (200, 200, 200), engine.ui.font_small, center=True)
+btn = pygame.Rect(engine.width // 2 - 80, engine.height // 2 + 30, 160, 45)
+if engine.ui.button(engine.screen, "INDITAS", btn, color=(50, 150, 50)):
+    engine.switch_state(engine.STATE_PLAYING)

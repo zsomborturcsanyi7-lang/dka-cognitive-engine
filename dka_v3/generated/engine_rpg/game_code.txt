@@ -1,0 +1,141 @@
+
+===init===
+engine.set_var("px", 400)
+engine.set_var("py", 300)
+engine.set_var("hp", 100)
+engine.set_var("mhp", 100)
+engine.set_var("atk", 10)
+engine.set_var("lvl", 1)
+engine.set_var("exp", 0)
+engine.set_var("nexp", 50)
+engine.set_var("gold", 0)
+engine.set_var("enemies", [])
+engine.set_var("show_menu", False)
+engine.timer.set("spawn", 3.0)
+
+===update===
+import pygame, random, math
+px = engine.get_var("px")
+py = engine.get_var("py")
+hp = engine.get_var("hp", 100)
+mhp = engine.get_var("mhp", 100)
+enemies = engine.get_var("enemies", [])
+
+if engine.get_var("show_menu", False):
+    if engine.input.key_just_pressed(pygame.K_RETURN) or engine.input.key_just_pressed(pygame.K_ESCAPE):
+        engine.set_var("show_menu", False)
+    return
+
+spd = 4
+if engine.input.key_pressed(pygame.K_LEFT): px = px - spd
+if engine.input.key_pressed(pygame.K_RIGHT): px = px + spd
+if engine.input.key_pressed(pygame.K_UP): py = py - spd
+if engine.input.key_pressed(pygame.K_DOWN): py = py + spd
+if px < 20: px = 20
+if px > engine.width - 20: px = engine.width - 20
+if py < 20: py = 20
+if py > engine.height - 20: py = engine.height - 20
+
+if len(enemies) < 4 and engine.timer.ready("spawn"):
+    ex = random.randint(50, engine.width - 50)
+    ey = random.randint(50, engine.height - 50)
+    etype = random.choice(["goblin", "skeleton", "slime"])
+    enemies.append({"x": ex, "y": ey, "type": etype, "hp": 20, "mhp": 20, "atk": 5})
+
+for e in enemies[:]:
+    dx = px - e["x"]
+    dy = py - e["y"]
+    dist = math.sqrt(dx * dx + dy * dy)
+    if dist > 0 and dist < 200:
+        e["x"] = e["x"] + (dx / dist) * 1.5
+        e["y"] = e["y"] + (dy / dist) * 1.5
+    if dist < 35:
+        hp = hp - e.get("atk", 5) * 0.1
+    if hp < 0: hp = 0
+
+if engine.input.key_just_pressed(pygame.K_SPACE):
+    for e in enemies[:]:
+        dx = px - e["x"]
+        dy = py - e["y"]
+        if dx * dx + dy * dy < 1600:
+            dmg = engine.get_var("atk", 10) + random.randint(-3, 5)
+            e["hp"] = e["hp"] - dmg
+            engine.particles.emit(e["x"], e["y"], 8, "spark", color=(255, 100, 50))
+            engine.filter.flash((255, 200, 100))
+            if e["hp"] <= 0:
+                engine.inc_var("exp", e["mhp"])
+                engine.inc_var("gold", random.randint(1, 5))
+                engine.particles.emit(e["x"], e["y"], 20, "explosion", color=(100, 255, 100))
+                enemies.remove(e)
+                exp = engine.get_var("exp", 0)
+                nexp = engine.get_var("nexp", 50)
+                if exp >= nexp:
+                    engine.inc_var("lvl", 1)
+                    engine.inc_var("mhp", 20)
+                    engine.inc_var("atk", 5)
+                    engine.set_var("exp", 0)
+                    engine.set_var("nexp", nexp + 50)
+                    engine.filter.flash((100, 255, 255))
+                    engine.camera.shake(10)
+                    hp = engine.get_var("mhp", 100)
+
+if hp < mhp:
+    hp = min(mhp, hp + 0.05)
+
+engine.set_var("px", px)
+engine.set_var("py", py)
+engine.set_var("hp", hp)
+engine.set_var("enemies", enemies)
+engine.particles.update(engine.dt)
+
+if engine.input.key_just_pressed(pygame.K_i):
+    engine.set_var("show_menu", not engine.get_var("show_menu", False))
+
+===draw===
+import pygame
+px = engine.get_var("px")
+py = engine.get_var("py")
+hp = engine.get_var("hp", 100)
+mhp = engine.get_var("mhp", 100)
+enemies = engine.get_var("enemies", [])
+
+engine.screen.fill((30, 30, 40))
+pygame.draw.rect(engine.screen, (80, 150, 255), (px - 18, py - 18, 36, 36), border_radius=18)
+pygame.draw.circle(engine.screen, (130, 200, 255), (px - 5, py - 5), 6)
+
+hp_pct = hp / max(mhp, 1)
+engine.ui.progress_bar(engine.screen, px - 20, py - 30, 40, 5, hp_pct, (0, 255, 0))
+
+for e in enemies:
+    color = (50, 180, 50) if e.get("type") == "goblin" else ((200, 200, 200) if e.get("type") == "skeleton" else (100, 200, 200))
+    pygame.draw.circle(engine.screen, color, (int(e["x"]), int(e["y"])), 16)
+    pygame.draw.circle(engine.screen, (255, 255, 255), (int(e["x"]), int(e["y"])), 16, 1)
+    ehp_pct = e["hp"] / max(e.get("mhp", 20), 1)
+    engine.ui.progress_bar(engine.screen, int(e["x"]) - 14, int(e["y"]) - 22, 28, 4, ehp_pct, (255, 50, 50))
+
+engine.particles.render(engine.screen)
+
+engine.ui.draw_label(engine.screen, "HP: " + str(int(hp)) + "/" + str(int(mhp)), (10, 10), (100, 255, 100))
+engine.ui.draw_label(engine.screen, "Szint: " + str(engine.get_var("lvl", 1)), (10, 34), (255, 255, 255), engine.ui.font_small)
+engine.ui.draw_label(engine.screen, "I = inventory | SPACE = tamadas", (10, engine.height - 30), (120, 120, 120), engine.ui.font_small)
+
+if engine.get_var("show_menu", False):
+    overlay = pygame.Surface((engine.width, engine.height), pygame.SRCALPHA)
+    overlay.fill((0, 0, 0, 180))
+    engine.screen.blit(overlay, (0, 0))
+    engine.ui.draw_label(engine.screen, "STATUS", (engine.width // 2, engine.height // 2 - 60), (255, 255, 255), engine.ui.font_large, center=True)
+    lines = ["Szint: " + str(engine.get_var("lvl", 1)), "HP: " + str(int(hp)) + "/" + str(int(mhp)), "Sebzes: " + str(engine.get_var("atk", 10))]
+    for i, l in enumerate(lines):
+        engine.ui.draw_label(engine.screen, l, (engine.width // 2, engine.height // 2 - 20 + i * 28), (200, 200, 200), engine.ui.font_small, center=True)
+
+===collision===
+return engine.get_var("hp", 100) <= 0
+
+===menu_draw===
+import pygame
+engine.screen.fill((20, 20, 30))
+engine.ui.draw_label(engine.screen, "RPG DEMO", (engine.width // 2, engine.height // 3 - 20), (100, 180, 255), engine.ui.font_large, center=True)
+engine.ui.draw_label(engine.screen, "Nyilak: mozgas | SPACE: tamadas | I: status", (engine.width // 2, engine.height // 2), (200, 200, 200), engine.ui.font_small, center=True)
+btn = pygame.Rect(engine.width // 2 - 80, engine.height // 2 + 40, 160, 40)
+if engine.ui.button(engine.screen, "JATEK", btn, color=(60, 100, 200)):
+    engine.switch_state(engine.STATE_PLAYING)

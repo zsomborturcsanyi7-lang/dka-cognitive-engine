@@ -1,0 +1,1214 @@
+{
+  "b0542f0b-31d": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4708333333333333
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8083333333333333
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8583333333333333
+    }
+  ],
+  "b2bdb2c7-254": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 1.0
+    }
+  ],
+  "9f19e408-d22": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 1.0
+    }
+  ],
+  "ef257fc0-823": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_CALL"
+      },
+      "importance": 1.0
+    }
+  ],
+  "3ec1bfb5-eb7": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "INDEX_ACCESS"
+      },
+      "importance": 1.0
+    }
+  ],
+  "b8091377-b5f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.46887966804979253
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.44813278008298757
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8049792531120332
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8589211618257261
+    }
+  ],
+  "c821f4a3-33f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "ATTRIBUTE_ACCESS"
+      },
+      "importance": 1.0
+    }
+  ],
+  "079ec58b-1fa": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.47107438016528924
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45041322314049587
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8057851239669421
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.859504132231405
+    }
+  ],
+  "7e9c91e8-e74": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4732510288065844
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45267489711934156
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8065843621399177
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8600823045267489
+    }
+  ],
+  "18198060-f4b": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.47540983606557374
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45081967213114754
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8032786885245902
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.860655737704918
+    }
+  ],
+  "35d55142-734": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.47346938775510206
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4489795918367347
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8612244897959184
+    }
+  ],
+  "28480378-235": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.47560975609756095
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45121951219512196
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8008130081300813
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8617886178861789
+    }
+  ],
+  "e63c43c4-510": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4777327935222672
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4534412955465587
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8016194331983806
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8623481781376519
+    }
+  ],
+  "37cad093-a5b": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4798387096774194
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.45564516129032256
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8024193548387096
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8629032258064516
+    }
+  ],
+  "93cfe180-c4d": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4819277108433735
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4578313253012048
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8032128514056225
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8634538152610441
+    }
+  ],
+  "f95c7843-b4f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.48
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.46
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.804
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.864
+    }
+  ],
+  "0b74f5af-f91": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4820717131474104
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.46215139442231074
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8047808764940239
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8645418326693227
+    }
+  ],
+  "2902274a-cfb": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.48412698412698413
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4642857142857143
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8055555555555556
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8650793650793651
+    }
+  ],
+  "1d8fab6d-21e": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.48221343873517786
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.466403162055336
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8063241106719368
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8656126482213439
+    }
+  ],
+  "ed7d6e8c-75f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.48031496062992124
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4645669291338583
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8031496062992126
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8661417322834646
+    }
+  ],
+  "0553b988-306": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4823529411764706
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4627450980392157
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.803921568627451
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8666666666666667
+    }
+  ],
+  "8ad5b340-dd0": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.48046875
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4609375
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.80078125
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8671875
+    }
+  ],
+  "6bcc1fa2-69f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4785992217898833
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4591439688715953
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.7976653696498055
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.867704280155642
+    }
+  ],
+  "0b3c1a5d-8d5": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4806201550387597
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.46124031007751937
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.8023255813953488
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8643410852713178
+    }
+  ],
+  "6e465aa3-a8f": [
+    {
+      "role_path": "",
+      "constraints": {
+        "pattern_type": "FUNCTION_DEF"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "name",
+      "constraints": {
+        "role": "name"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "params",
+      "constraints": {
+        "role": "param"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 1.0
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "ASSIGNMENT"
+      },
+      "importance": 0.4826254826254826
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "FOR_LOOP"
+      },
+      "importance": 0.4594594594594595
+    },
+    {
+      "role_path": "body.statements.body",
+      "constraints": {
+        "pattern_type": "BLOCK"
+      },
+      "importance": 0.803088803088803
+    },
+    {
+      "role_path": "body.statements",
+      "constraints": {
+        "pattern_type": "RETURN_STMT"
+      },
+      "importance": 0.8648648648648649
+    }
+  ]
+}

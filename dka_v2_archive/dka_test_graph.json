@@ -1,0 +1,1626 @@
+{
+  "primitives": {
+    "8a970e27-07f": {
+      "id": "8a970e27-07f",
+      "type": "VARIABLE",
+      "value": "bubble_sort",
+      "role": "name",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "c3c802b5-271": {
+      "id": "c3c802b5-271",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": "param",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "bdd43782-1ff": {
+      "id": "bdd43782-1ff",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "0b7645dd-cda": {
+      "id": "0b7645dd-cda",
+      "type": "VARIABLE",
+      "value": "len",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "50fa1078-955": {
+      "id": "50fa1078-955",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "0348327b-ee2": {
+      "id": "0348327b-ee2",
+      "type": "VARIABLE",
+      "value": "i",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "3d8a8c98-91e": {
+      "id": "3d8a8c98-91e",
+      "type": "VARIABLE",
+      "value": "range",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "e84145bf-d0b": {
+      "id": "e84145bf-d0b",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "182c3ec8-d1f": {
+      "id": "182c3ec8-d1f",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "feb3a17c-74a": {
+      "id": "feb3a17c-74a",
+      "type": "VARIABLE",
+      "value": "range",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "d9589e4b-3e1": {
+      "id": "d9589e4b-3e1",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "5d569c9c-e6a": {
+      "id": "5d569c9c-e6a",
+      "type": "OPERATOR",
+      "value": "Sub",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "f5f57dbc-463": {
+      "id": "f5f57dbc-463",
+      "type": "VARIABLE",
+      "value": "i",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "0d94437f-2e9": {
+      "id": "0d94437f-2e9",
+      "type": "OPERATOR",
+      "value": "Sub",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "ea4c0fbc-a68": {
+      "id": "ea4c0fbc-a68",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "e0bab2c2-324": {
+      "id": "e0bab2c2-324",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "73d7db7e-c39": {
+      "id": "73d7db7e-c39",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "e998d6c1-37b": {
+      "id": "e998d6c1-37b",
+      "type": "OPERATOR",
+      "value": "Gt",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "42719829-e55": {
+      "id": "42719829-e55",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "194a0b0a-fe4": {
+      "id": "194a0b0a-fe4",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "704ba416-3f5": {
+      "id": "704ba416-3f5",
+      "type": "OPERATOR",
+      "value": "Add",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "57a747ad-4fd": {
+      "id": "57a747ad-4fd",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "5e71d567-8ec": {
+      "id": "5e71d567-8ec",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "6823f7b1-31c": {
+      "id": "6823f7b1-31c",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "ac50df37-b9d": {
+      "id": "ac50df37-b9d",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "e011c89d-368": {
+      "id": "e011c89d-368",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "98196883-d8e": {
+      "id": "98196883-d8e",
+      "type": "OPERATOR",
+      "value": "Add",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "e890ecdd-578": {
+      "id": "e890ecdd-578",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "e63c7f14-d2f": {
+      "id": "e63c7f14-d2f",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "63fd3c48-6cf": {
+      "id": "63fd3c48-6cf",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "c1b43740-0c1": {
+      "id": "c1b43740-0c1",
+      "type": "OPERATOR",
+      "value": "Add",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "25a430a3-e61": {
+      "id": "25a430a3-e61",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "ededf649-802": {
+      "id": "ededf649-802",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "fef93437-c71": {
+      "id": "fef93437-c71",
+      "type": "VARIABLE",
+      "value": "j",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "cc2603e3-4c8": {
+      "id": "cc2603e3-4c8",
+      "type": "VARIABLE",
+      "value": "arr",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "d1248ab4-ba5": {
+      "id": "d1248ab4-ba5",
+      "type": "VARIABLE",
+      "value": "fibonacci",
+      "role": "name",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "ecc449fa-395": {
+      "id": "ecc449fa-395",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": "param",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "5c4283e0-131": {
+      "id": "5c4283e0-131",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "f74b1303-f8f": {
+      "id": "f74b1303-f8f",
+      "type": "OPERATOR",
+      "value": "LtE",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "b03a7bf5-157": {
+      "id": "b03a7bf5-157",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "309da72e-312": {
+      "id": "309da72e-312",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "f95bed77-920": {
+      "id": "f95bed77-920",
+      "type": "VARIABLE",
+      "value": "fibonacci",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "e2e28eb4-474": {
+      "id": "e2e28eb4-474",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "bb8a2a5e-777": {
+      "id": "bb8a2a5e-777",
+      "type": "OPERATOR",
+      "value": "Sub",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "a3f8bb25-a5f": {
+      "id": "a3f8bb25-a5f",
+      "type": "LITERAL",
+      "value": "1",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "8e37603b-ccf": {
+      "id": "8e37603b-ccf",
+      "type": "OPERATOR",
+      "value": "Add",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "58d3137d-e9f": {
+      "id": "58d3137d-e9f",
+      "type": "VARIABLE",
+      "value": "fibonacci",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "044c5c6d-f3a": {
+      "id": "044c5c6d-f3a",
+      "type": "VARIABLE",
+      "value": "n",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [
+        "name_ref"
+      ]
+    },
+    "24768d2a-d57": {
+      "id": "24768d2a-d57",
+      "type": "OPERATOR",
+      "value": "Sub",
+      "role": "operator",
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    },
+    "10707a60-a5e": {
+      "id": "10707a60-a5e",
+      "type": "LITERAL",
+      "value": "2",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": []
+    }
+  },
+  "patterns": {
+    "20c9ba78-d2a": {
+      "id": "20c9ba78-d2a",
+      "type": "FUNCTION_CALL",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "func": [
+          "0b7645dd-cda"
+        ],
+        "args": [
+          "50fa1078-955"
+        ]
+      },
+      "roles": {
+        "func": {
+          "allowed_types": []
+        },
+        "args": {
+          "allowed_types": []
+        },
+        "kwargs": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "6a1190f0-d36": {
+      "id": "6a1190f0-d36",
+      "type": "ASSIGNMENT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "targets": [
+          "bdd43782-1ff"
+        ],
+        "value": [
+          "20c9ba78-d2a"
+        ]
+      },
+      "roles": {
+        "targets": {
+          "allowed_types": []
+        },
+        "value": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "f8b5dcbb-d9b": {
+      "id": "f8b5dcbb-d9b",
+      "type": "FUNCTION_CALL",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "func": [
+          "3d8a8c98-91e"
+        ],
+        "args": [
+          "e84145bf-d0b"
+        ]
+      },
+      "roles": {
+        "func": {
+          "allowed_types": []
+        },
+        "args": {
+          "allowed_types": []
+        },
+        "kwargs": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "3c04c6ee-91f": {
+      "id": "3c04c6ee-91f",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "d9589e4b-3e1"
+        ],
+        "operator": [
+          "5d569c9c-e6a"
+        ],
+        "right": [
+          "f5f57dbc-463"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "d1a9228e-ead": {
+      "id": "d1a9228e-ead",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "3c04c6ee-91f"
+        ],
+        "operator": [
+          "0d94437f-2e9"
+        ],
+        "right": [
+          "ea4c0fbc-a68"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "837ace2b-088": {
+      "id": "837ace2b-088",
+      "type": "FUNCTION_CALL",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "func": [
+          "feb3a17c-74a"
+        ],
+        "args": [
+          "d1a9228e-ead"
+        ]
+      },
+      "roles": {
+        "func": {
+          "allowed_types": []
+        },
+        "args": {
+          "allowed_types": []
+        },
+        "kwargs": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "f32f6aab-0d1": {
+      "id": "f32f6aab-0d1",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "e0bab2c2-324"
+        ],
+        "index": [
+          "73d7db7e-c39"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "6c65ee8b-a51": {
+      "id": "6c65ee8b-a51",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "194a0b0a-fe4"
+        ],
+        "operator": [
+          "704ba416-3f5"
+        ],
+        "right": [
+          "57a747ad-4fd"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "7469b114-58b": {
+      "id": "7469b114-58b",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "42719829-e55"
+        ],
+        "index": [
+          "6c65ee8b-a51"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "2011cfb7-99a": {
+      "id": "2011cfb7-99a",
+      "type": "COMPARISON",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "f32f6aab-0d1"
+        ],
+        "ops": [
+          "e998d6c1-37b"
+        ],
+        "comparators": [
+          "7469b114-58b"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "ops": {
+          "allowed_types": []
+        },
+        "comparators": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "3a12e0e9-fb6": {
+      "id": "3a12e0e9-fb6",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "5e71d567-8ec"
+        ],
+        "index": [
+          "6823f7b1-31c"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "7f37979f-bd4": {
+      "id": "7f37979f-bd4",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "e011c89d-368"
+        ],
+        "operator": [
+          "98196883-d8e"
+        ],
+        "right": [
+          "e890ecdd-578"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "9cf80034-65c": {
+      "id": "9cf80034-65c",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "ac50df37-b9d"
+        ],
+        "index": [
+          "7f37979f-bd4"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "63d625e9-4f4": {
+      "id": "63d625e9-4f4",
+      "type": "EXPRESSION",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "elements": [
+          "3a12e0e9-fb6",
+          "9cf80034-65c"
+        ]
+      },
+      "roles": {
+        "elements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "31e23f91-0ec": {
+      "id": "31e23f91-0ec",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "63fd3c48-6cf"
+        ],
+        "operator": [
+          "c1b43740-0c1"
+        ],
+        "right": [
+          "25a430a3-e61"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "98946b9c-511": {
+      "id": "98946b9c-511",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "e63c7f14-d2f"
+        ],
+        "index": [
+          "31e23f91-0ec"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "d4b8b416-80e": {
+      "id": "d4b8b416-80e",
+      "type": "INDEX_ACCESS",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "object": [
+          "ededf649-802"
+        ],
+        "index": [
+          "fef93437-c71"
+        ]
+      },
+      "roles": {
+        "object": {
+          "allowed_types": []
+        },
+        "index": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "f3d0df43-0a5": {
+      "id": "f3d0df43-0a5",
+      "type": "EXPRESSION",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "elements": [
+          "98946b9c-511",
+          "d4b8b416-80e"
+        ]
+      },
+      "roles": {
+        "elements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "9725cec1-5ab": {
+      "id": "9725cec1-5ab",
+      "type": "ASSIGNMENT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "targets": [
+          "63d625e9-4f4"
+        ],
+        "value": [
+          "f3d0df43-0a5"
+        ]
+      },
+      "roles": {
+        "targets": {
+          "allowed_types": []
+        },
+        "value": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "08a66f8e-ce3": {
+      "id": "08a66f8e-ce3",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "9725cec1-5ab"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "7be72fdf-d05": {
+      "id": "7be72fdf-d05",
+      "type": "IF_STATEMENT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "condition": [
+          "2011cfb7-99a"
+        ],
+        "body": [
+          "08a66f8e-ce3"
+        ]
+      },
+      "roles": {
+        "condition": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "orelse": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "33f59338-eb1": {
+      "id": "33f59338-eb1",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "7be72fdf-d05"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "2887fe22-2ef": {
+      "id": "2887fe22-2ef",
+      "type": "FOR_LOOP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "target": [
+          "182c3ec8-d1f"
+        ],
+        "iter": [
+          "837ace2b-088"
+        ],
+        "body": [
+          "33f59338-eb1"
+        ]
+      },
+      "roles": {
+        "target": {
+          "allowed_types": []
+        },
+        "iter": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "orelse": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "1a177d09-269": {
+      "id": "1a177d09-269",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "2887fe22-2ef"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "7ba83d8e-55b": {
+      "id": "7ba83d8e-55b",
+      "type": "FOR_LOOP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "target": [
+          "0348327b-ee2"
+        ],
+        "iter": [
+          "f8b5dcbb-d9b"
+        ],
+        "body": [
+          "1a177d09-269"
+        ]
+      },
+      "roles": {
+        "target": {
+          "allowed_types": []
+        },
+        "iter": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "orelse": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "0c857c13-b44": {
+      "id": "0c857c13-b44",
+      "type": "RETURN_STMT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "value": [
+          "cc2603e3-4c8"
+        ]
+      },
+      "roles": {
+        "value": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "da6c6f32-e23": {
+      "id": "da6c6f32-e23",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "6a1190f0-d36",
+          "7ba83d8e-55b",
+          "0c857c13-b44"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "b80fe0bd-94d": {
+      "id": "b80fe0bd-94d",
+      "type": "FUNCTION_DEF",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "name": [
+          "8a970e27-07f"
+        ],
+        "params": [
+          "c3c802b5-271"
+        ],
+        "body": [
+          "da6c6f32-e23"
+        ]
+      },
+      "roles": {
+        "name": {
+          "allowed_types": []
+        },
+        "params": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "decorators": {
+          "allowed_types": []
+        },
+        "returns": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "2d3df822-51d": {
+      "id": "2d3df822-51d",
+      "type": "COMPARISON",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "5c4283e0-131"
+        ],
+        "ops": [
+          "f74b1303-f8f"
+        ],
+        "comparators": [
+          "b03a7bf5-157"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "ops": {
+          "allowed_types": []
+        },
+        "comparators": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "fe805fbb-5d3": {
+      "id": "fe805fbb-5d3",
+      "type": "RETURN_STMT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "value": [
+          "309da72e-312"
+        ]
+      },
+      "roles": {
+        "value": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "e678ab92-937": {
+      "id": "e678ab92-937",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "fe805fbb-5d3"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "b2d0e589-525": {
+      "id": "b2d0e589-525",
+      "type": "IF_STATEMENT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "condition": [
+          "2d3df822-51d"
+        ],
+        "body": [
+          "e678ab92-937"
+        ]
+      },
+      "roles": {
+        "condition": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "orelse": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "cfa2a926-aea": {
+      "id": "cfa2a926-aea",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "e2e28eb4-474"
+        ],
+        "operator": [
+          "bb8a2a5e-777"
+        ],
+        "right": [
+          "a3f8bb25-a5f"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "aba53e4f-281": {
+      "id": "aba53e4f-281",
+      "type": "FUNCTION_CALL",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "func": [
+          "f95bed77-920"
+        ],
+        "args": [
+          "cfa2a926-aea"
+        ]
+      },
+      "roles": {
+        "func": {
+          "allowed_types": []
+        },
+        "args": {
+          "allowed_types": []
+        },
+        "kwargs": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "5aed91ba-c84": {
+      "id": "5aed91ba-c84",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "044c5c6d-f3a"
+        ],
+        "operator": [
+          "24768d2a-d57"
+        ],
+        "right": [
+          "10707a60-a5e"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "d5fa72f1-92f": {
+      "id": "d5fa72f1-92f",
+      "type": "FUNCTION_CALL",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "func": [
+          "58d3137d-e9f"
+        ],
+        "args": [
+          "5aed91ba-c84"
+        ]
+      },
+      "roles": {
+        "func": {
+          "allowed_types": []
+        },
+        "args": {
+          "allowed_types": []
+        },
+        "kwargs": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "e4813f31-f53": {
+      "id": "e4813f31-f53",
+      "type": "BINARY_OP",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "left": [
+          "aba53e4f-281"
+        ],
+        "operator": [
+          "8e37603b-ccf"
+        ],
+        "right": [
+          "d5fa72f1-92f"
+        ]
+      },
+      "roles": {
+        "left": {
+          "allowed_types": []
+        },
+        "operator": {
+          "allowed_types": []
+        },
+        "right": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "7de8bb30-e0e": {
+      "id": "7de8bb30-e0e",
+      "type": "RETURN_STMT",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "value": [
+          "e4813f31-f53"
+        ]
+      },
+      "roles": {
+        "value": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "5754764d-c74": {
+      "id": "5754764d-c74",
+      "type": "BLOCK",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "statements": [
+          "b2d0e589-525",
+          "7de8bb30-e0e"
+        ]
+      },
+      "roles": {
+        "statements": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    },
+    "ab2adc0f-9f2": {
+      "id": "ab2adc0f-9f2",
+      "type": "FUNCTION_DEF",
+      "value": "",
+      "role": null,
+      "domain": "GENERAL",
+      "source": "",
+      "fingerprints": [],
+      "children": {
+        "name": [
+          "d1248ab4-ba5"
+        ],
+        "params": [
+          "ecc449fa-395"
+        ],
+        "body": [
+          "5754764d-c74"
+        ]
+      },
+      "roles": {
+        "name": {
+          "allowed_types": []
+        },
+        "params": {
+          "allowed_types": []
+        },
+        "body": {
+          "allowed_types": []
+        },
+        "decorators": {
+          "allowed_types": []
+        },
+        "returns": {
+          "allowed_types": []
+        }
+      },
+      "confidence": 1.0
+    }
+  },
+  "schemas": {},
+  "stats": {
+    "total_pie": 90,
+    "primitives": 50,
+    "patterns": 40,
+    "schemas": 0,
+    "fingerprints": 1,
+    "sources": 0,
+    "depth": 1
+  }
+}

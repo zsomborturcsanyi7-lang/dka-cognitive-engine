@@ -1,0 +1,101 @@
+# --- DATA STRUCTURES ---
+class Node {
+    def __init__ ( self , data ) {
+        self.data = data ;
+        self.next = None ;
+    }
+}
+
+class LinkedList {
+    def __init__ ( self ) {
+        self.head = None ;
+    }
+    def append ( self , data ) {
+        if not self.head {
+            self.head = Node ( data ) ;
+            return ;
+        }
+        last = self.head ;
+        while last.next {
+            last = last.next ;
+        }
+        last.next = Node ( data ) ;
+    }
+}
+
+# --- ADVANCED ALGORITHMS ---
+def quicksort ( arr ) {
+    if len ( arr ) <= 1 {
+        return arr ;
+    }
+    pivot = arr [ len ( arr ) // 2 ] ;
+    left = [ x for x in arr if x < pivot ] ;
+    middle = [ x for x in arr if x == pivot ] ;
+    right = [ x for x in arr if x > pivot ] ;
+    return quicksort ( left ) + middle + quicksort ( right ) ;
+}
+
+def binary_search ( arr , low , high , x ) {
+    if high >= low {
+        mid = ( high + low ) // 2 ;
+        if arr [ mid ] == x {
+            return mid ;
+        }
+        elif arr [ mid ] > x {
+            return binary_search ( arr , low , mid - 1 , x ) ;
+        }
+        else {
+            return binary_search ( arr , mid + 1 , high , x ) ;
+        }
+    }
+    else {
+        return -1 ;
+    }
+}
+
+# --- NETWORKING & API ---
+import requests
+def get_weather_data ( city ) {
+    api_key = "YOUR_API_KEY" ;
+    base_url = "http://api.openweathermap.org/data/2.5/weather?" ;
+    complete_url = base_url + "appid=" + api_key + "&q=" + city ;
+    response = requests.get ( complete_url ) ;
+    x = response.json ( ) ;
+    if x [ "cod" ] != "404" {
+        y = x [ "main" ] ;
+        current_temperature = y [ "temp" ] ;
+        return current_temperature ;
+    }
+    else {
+        return None ;
+    }
+}
+
+# --- FILE I/O & LOGGING ---
+import logging
+def process_file_securely ( filename ) {
+    logging.basicConfig ( level = logging.INFO ) ;
+    try {
+        with open ( filename , 'r' ) as f {
+            data = f.read ( ) ;
+            logging.info ( "File read successfully" ) ;
+            return data ;
+        }
+    }
+    except Exception as e {
+        logging.error ( "Error occurred: " + str ( e ) ) ;
+        return None ;
+    }
+}
+
+# --- UTILS ---
+def fibonacci ( n ) {
+    if n <= 0 { return [ ] ; }
+    elif n == 1 { return [ 0 ] ; }
+    sequence = [ 0 , 1 ] ;
+    while len ( sequence ) < n {
+        next_val = sequence [ -1 ] + sequence [ -2 ] ;
+        sequence.append ( next_val ) ;
+    }
+    return sequence ;
+}

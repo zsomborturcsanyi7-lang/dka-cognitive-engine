@@ -1,0 +1,23 @@
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res = A ;
+}
+if ( type = = 1 ) {
+    res

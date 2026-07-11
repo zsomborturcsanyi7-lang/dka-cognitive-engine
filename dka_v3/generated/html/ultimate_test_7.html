@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üdvözöljük a Blogban!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, #2c3e50, #3498db); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.8em; margin-bottom: 10px; }
+        header p { font-size: 1.3em; opacity: 0.9; }
+        nav { background: #2c3e50; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; display: flex; gap: 25px; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        nav a { color: white; text-decoration: none; font-size: 1.05em; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        nav a:hover { background: #3498db; }
+        main { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 30px auto; max-width: 1200px; }
+        footer { background: #2c3e50; color: white; padding: 30px 20px; text-align: center; margin-top: 40px; }
+        footer p { margin: 5px 0; font-size: 0.9em; opacity: 0.8; }
+        h1 { color: #2c3e50; margin-bottom: 20px; font-size: 2.2em; }
+        h2 { color: #34495e; margin: 30px 0 15px; font-size: 1.6em; }
+        h3 { color: #2c3e50; margin: 20px 0 10px; font-size: 1.3em; }
+        p { margin-bottom: 15px; }
+        .section { margin: 40px 0; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        @media (max-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <p>Friss hírek, érdekes cikkek</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Főoldal</a></li>
+            <li><a href="#">Rólunk</a></li>
+            <li><a href="#">Szolgáltatások</a></li>
+            <li><a href="#">Galéria</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="card" style="background:#f8f9fa;padding:20px;border-radius:8px;margin:15px 0;border-left:4px solid #e74c3c;">
+    <h3 style="margin-bottom:10px;color:#2c3e50;">Tech</h3>
+    <p>A(z) Tech egy specializált kártya komponens.</p>
+</div>
+<div class="card" style="background:#f8f9fa;padding:20px;border-radius:8px;margin:15px 0;border-left:4px solid #e74c3c;">
+    <h3 style="margin-bottom:10px;color:#2c3e50;">Tudomany</h3>
+    <p>A(z) Tudomany egy specializált kártya komponens.</p>
+</div>
+<div class="card" style="background:#f8f9fa;padding:20px;border-radius:8px;margin:15px 0;border-left:4px solid #e74c3c;">
+    <h3 style="margin-bottom:10px;color:#2c3e50;">Eletmod</h3>
+    <p>A(z) Eletmod egy specializált kártya komponens.</p>
+</div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 DKA V3 Generált Weboldal. Minden jog fenntartva.</p>
+        <p>Készült a Determinisztikus Kognitív Architektúra V3 segítségével.</p>
+    </footer>
+</body>
+</html>

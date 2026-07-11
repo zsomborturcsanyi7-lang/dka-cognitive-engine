@@ -1,0 +1,3 @@
+class LogicEngine: Deterministic inference and validation engine. Uses graph traversal to generate code and detect logical errors. def __init__ (self, graph, receptor): self. graph = graph self. receptor = receptor self. inductor = inductor self. total_lines = 0 def train_from_directory (self, root_dir, extensions = (. py,. json,. txt)): Crawls a directory and ingests all matching source files. print (f [!] Hiba a fájl betöltésekor (:
+    file_path)::
+    e
