@@ -7,4 +7,4 @@ Rövid leírás...
 ## Használat
 
 ## Fejlesztő
-Zsombi (Kingdoms SMP)
+Zsombi (AI asszisztens segítségével)
