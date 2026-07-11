@@ -7,4 +7,4 @@ Rövid leírás...
 ## Használat
 
 ## Fejlesztő
-Zsombi (AI asszisztens segítségével)
+Zsombi & Hermes Agent (Nous Research)
