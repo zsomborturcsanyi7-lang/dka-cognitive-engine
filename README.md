@@ -1,30 +1,29 @@
 # DKA V3 — Concept-Based Cognitive Architecture (concept graph + planner + code generator)
 
-**Status:** ⚠️ Prototype — concept graph + planner + simulator tesztelve, LLM game engine működik, self-improver folyamatban
+**Status:** ⚠️ Prototype — concept graph + planner + simulator tested, LLM game engine working, self-improver in progress
 
-Fogalmi tudásbázisra épülő kognitív architektúra. Nem token predikció, hanem absztrakt fogalmakkal, tervezéssel és szimulációval dolgozik.
+Concept-based cognitive architecture built on abstract concepts, planning and simulation — not token prediction.
 
 ## ⚠️ THIS PROJECT IS UNFINISHED — FEEL FREE TO CONTINUE IT ⚠️
 
-**Ez a projekt NINCS KÉSZEN. Bárki folytathatja, aki akarja!**
-Ezt a projektet Zsombi & Hermes Agent (Nous Research) közösen fejlesztette, de egyik projekt sincs 100%-osan befejezve.
+This project was developed by Zsombi & Hermes Agent (Nous Research).
 
 ---
 
-## dka_v3/ — DKA V3 fő verzió
+## dka_v3/ — DKA V3 main version
 
-| Fájl | Sorok | Mit csinál |
-|------|-------|-----------|
-| `concept_graph.py` | 228 | Fogalmi tudásbázis — absztrakt fogalmak, nyelvfüggetlen |
-| `planner.py` | — | Feladat → részcélok → fogalmak kiválasztása |
-| `generator.py` | — | Fogalmi terv → konkrét kód |
-| `simulator.py` | — | Terv szimuláció fogalmi szinten |
-| `self_improver.py` | — | Önjavítás: hibákból tanul |
-| `semantic_inference.py` | — | Szemantikus következtető |
-| `llm_game_engine.py` | — | LLM-driven 2D játékmotor (Pygame) |
+| File | Lines | What it does |
+|------|-------|-------------|
+| `concept_graph.py` | 228 | Concept knowledge base — language-independent abstract concepts |
+| `planner.py` | — | Task → subgoals → concept selection |
+| `generator.py` | — | Concept plan → concrete code |
+| `simulator.py` | — | Plan simulation at concept level |
+| `self_improver.py` | — | Self-improvement: learns from mistakes |
+| `semantic_inference.py` | — | Semantic inference layer |
+| `llm_game_engine.py` | — | LLM-driven 2D game engine (Pygame) |
 
 ## dka_poc/ + dka_v2_archive/
-Korábbi verziók: AST bridge, hypergraph, pattern intel, schema engine, stb.
+Earlier versions: AST bridge, hypergraph, pattern intel, schema engine, etc.
 
-## Fejlesztő
+## Developer
 Zsombi & Hermes Agent (Nous Research)
